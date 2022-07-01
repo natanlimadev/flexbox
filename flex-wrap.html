@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+            /*flex-direction: column;*/
+            /* flex direction em colunas esta comentada apenas para visualizar, se quiser testar
+            e so retirar o comentario */
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+            min-width: 100px;
+        }
+        /* comportamento padrao nao precisa usar, apenas para saber nao altera em nada!
+       .nowrap{
+            flex-wrap: nowrap;
+       } */
+
+       .wrap{
+        flex-wrap: wrap;
+       }
+
+       .wrap-reverse{
+        flex-wrap: wrap-reverse;
+       }
+
+        .blue{
+            background: blue;
+        }
+
+        .green{
+            background: lightgreen;
+        }
+
+        .orange{
+            background: orangered;
+        }
+
+        .purple{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>No Wrap</h1>
+
+    <p>Comportamento padrao do Wrap e em linha e ele pode vazar. <br> Como no exemplo abaixo!</p>
+    
+    <div class="flex-container">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item purple">4</div>
+    </div>
+
+    <h1>Wrap</h1>
+
+    <p>Comportamento que faz a quebra de linha, observar que se coloado os limites de altura
+        e largura. <br> Ele vai acabar vazando como o exemplo acima!</p>
+    
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item purple">4</div>
+    </div>
+
+    <h1>Wrap-Reverse</h1>
+
+    <p>Comportamento que faz a quebra de linha,mas nesse caso de maneira reversa e as proximas linhas irão
+        <br> para cima. Conforme exemplo.</p>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item purple">4</div>
+    </div>
+
+    
+</body>
+</html>

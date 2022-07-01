@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Itens</title>
+
+    <style>
+
+        .body{
+            background-color: lightcoral;
+            color: aliceblue;
+        }
+
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: darkmagenta;
+            margin: 5px;   
+            color: aliceblue; 
+            text-align: center;
+            flex: 1;
+        }
+        
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .columns{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 400px;
+            justify-content: center;
+            }
+        
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body class="body">
+
+    <h1>Align Itens - row(linhas)</h1>
+
+    <H2>Center</H2>
+
+    <section class="container center">
+        <div class="item">Item 1,Nullam ac metus sed urna porta suscipit.  </div>
+        <div class="item">Item 2,Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend erat ac neque tincidunt, eu sagittis risus pretium.</div>
+        <div class="item">Item 3,Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus. Donec at pharetra ligula. Ut condimentum, nisi id dignissim iaculis, orci lacus cursus leo, et vehicula neque lectus id lorem.</div>
+    </section>
+
+    <H2>Stretch</H2>
+
+    <section class="container stretch">
+        <div class="item">Item 1, Nullam ac metus sed urna porta suscipit.  </div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend erat ac neque tincidunt, eu sagittis risus pretium.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus. Donec at pharetra ligula. Ut condimentum, nisi id dignissim iaculis, orci lacus cursus leo, et vehicula neque lectus id lorem.</div>
+    </section>
+
+    <H2>Flex-Start</H2>
+
+    <section class="container flex-start">
+        <div class="item">Item 1, Nullam ac metus sed urna porta suscipit.  </div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend erat ac neque tincidunt, eu sagittis risus pretium.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus. Donec at pharetra ligula. Ut condimentum, nisi id dignissim iaculis, orci lacus cursus leo, et vehicula neque lectus id lorem.</div>
+    </section>
+
+    <H2>Flex-End</H2>
+
+    <section class="container flex-end">
+        <div class="item">Item 1, Nullam ac metus sed urna porta suscipit.  </div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend erat ac neque tincidunt, eu sagittis risus pretium.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus. Donec at pharetra ligula. Ut condimentum, nisi id dignissim iaculis, orci lacus cursus leo, et vehicula neque lectus id lorem.</div>
+    </section>
+
+    <H2>Baseline</H2>
+
+    <section class="container baseline">
+        <div class="item">Item 1, Nullam ac metus sed urna porta suscipit.  </div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend erat ac neque tincidunt, eu sagittis risus pretium.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus. Donec at pharetra ligula. Ut condimentum, nisi id dignissim iaculis, orci lacus cursus leo, et vehicula neque lectus id lorem.</div>
+    </section>
+
+    <h1>Align Itens - Columns(colunas)</h1>
+
+    <H2>Center</H2>
+    <section class="container center columns">
+        <div class="item">Item 1, Nullam ac metus.</div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus.</div>
+    </section>
+
+    <H2>Stretch</H2>
+    <section class="container stretch columns">
+        <div class="item">Item 1, Nullam ac metus.</div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus.</div>
+    </section>
+
+    <H2>Flex-Start</H2>
+    <section class="container flex-start columns">
+        <div class="item">Item 1, Nullam ac metus.</div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus.</div>
+    </section>
+
+    <H2>Flex-End</H2>
+    <section class="container flex-end columns">
+        <div class="item">Item 1, Nullam ac metus.</div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus.</div>
+    </section>
+
+    <H2>Baseline</H2>
+    <section class="container baseline columns">
+        <div class="item">Item 1, Nullam ac metus.</div>
+        <div class="item">Item 2, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 3, Nulla pretium, ligula at posuere ornare, nunc elit vehicula odio, sed tincidunt purus diam et risus.</div>
+    </section>
+
+    <H2>Central</H2>
+    <section class="container center central">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac metus. Nulla pretium, ligula at posuere ornare.</div>
+    </section>
+
+
+
+</body>
+</html>
