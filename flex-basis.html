@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+
+    <style>
+        .container{
+            max-width: 5000px;
+            border: 2px solid black;
+            display: flex;
+
+        }
+
+        .item{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flexbasis{
+            flex-basis: auto;
+        }
+
+        .flexgrow1{
+            flex-grow: 1;
+        }
+        .flexgrow2{
+            flex-grow: 2;
+        }
+
+        .flexbasis0{
+            flex-basis: 0%;
+        }
+
+        .flexbasis100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Flex Basis Auto</h2>
+    <div class="container">
+        <div class="item flexbasis flexgrow1">A</div>
+        <div class="item flexbasis flexgrow1">BBB</div>
+        <div class="item flexbasis flexgrow1">C</div>
+        <div class="item flexbasis flexgrow2">DDD</div>
+    </div>
+
+    <h2>Flex Basis Zero</h2>
+    <div class="container">
+        <div class="item flexbasis0 flexgrow1">AAAAAAAA</div>
+        <div class="item flexbasis0 flexgrow1">BBB</div>
+        <div class="item flexbasis0 flexgrow1">C</div>
+        <div class="item flexbasis0 flexgrow1">DDD</div>
+    </div>
+
+    <h2>Flex Basis + Width</h2>
+    <div class="container">
+        <div class="item flexbasis100 flexgrow1">AAA</div>
+        <div class="item flexbasis100 flexgrow2">BBB</div>
+        <div class="item flexbasis100 flexgrow1">CCC</div>
+        <div class="item flexbasis100 flexgrow2">DDD</div>
+    </div>
+
+    
+</body>
+</html>

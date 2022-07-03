@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            width: 400px;
+
+        }
+
+        .item{
+            background-color: darkgoldenrod;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .flex1{
+            flex: 1;
+            /*comando acima significa grow = 1, shrink = 1 e basis = 0 */
+        }
+        .flex2{
+            flex: 2;
+            /*comando acima significa grow = 2, shrink = 1 e basis = 0 */
+        }
+
+        /*quando o basis e zero como nos exemplos acima o comando para setar largura e ignorado! */
+
+    </style>
+</head>
+<body>
+    <h2>flex = 1</h2>
+    <div class="container"> 
+        <div class="item flex1">A</div>
+        <div class="item flex1">BBB</div>
+        <div class="item flex1">CC</div>
+        <div class="item flex1">D</div>
+        <div class="item flex1">EE</div>
+    </div>
+
+    <h2>flex Mix</h2>
+    <div class="container"> 
+        <div class="item flex1">A</div>
+        <div class="item flex2">BBB</div>
+        <div class="item flex1">CC</div>
+        <div class="item flex1">D</div>
+        <div class="item flex2">EE</div>
+    </div>
+    
+</body>
+</html>

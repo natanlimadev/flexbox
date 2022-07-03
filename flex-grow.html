@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            margin-bottom: 10px;
+           
+          }
+
+          .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+          }
+
+          .flexgrow0{
+            flex-grow: 0;
+          }
+
+          .flexgrow1{
+            flex-grow: 1;
+          }
+
+          .flexgrow2{
+            flex-grow: 2;
+          }
+
+          .flexgrow3{
+            flex-grow: 3;
+          }
+    
+    </style>
+</head>
+<body>
+    <h2>Flex Grow 0</h2>
+    <div class="container">
+        <div class="item flexgrow0">A</div>
+        <div class="item flexgrow0">B</div>
+        <div class="item flexgrow0">C</div>
+        <div class="item flexgrow0">D</div>
+    </div>
+    
+    <h2>Flex Grow 1</h2>
+    <div class="container">
+        <div class="item flexgrow0">A</div>
+        <div class="item flexgrow1">B</div>
+        <div class="item flexgrow1">C</div>
+        <div class="item flexgrow0">D</div>
+    </div>
+
+    <h2>Flex Grow 2</h2>
+    <div class="container">
+        <div class="item flexgrow2">A</div>
+        <div class="item flexgrow0">B</div>
+        <div class="item flexgrow0">C</div>
+        <div class="item flexgrow2">D</div>
+    </div>
+
+    <h2>Flex Grow 3</h2>
+    <div class="container">
+        <div class="item flexgrow0">A</div>
+        <div class="item flexgrow3">B</div>
+        <div class="item flexgrow0">C</div>
+        <div class="item flexgrow3">D</div>
+    </div>
+    
+</body>
+</html>
