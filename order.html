@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+        }
+
+        .item{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .o1{
+            order: 1;
+        }
+
+        .o2{
+            order: 2;
+        }
+
+        .o3{
+            order: 3;
+        }
+
+        .o4{
+            order: 4;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+        .o-{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h2>Order = 0</h2>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>Order Diferentes</h2>
+    <div class="container">
+        <div class="item o4">1</div>
+        <div class="item o3">2</div>
+        <div class="item o2">3</div>
+        <div class="item o1">4</div>
+    </div>
+    <!--order serve para ordenar os elementos conforme exemplo acima-->
+    <h2>Order negativo</h2>
+    <div class="container">
+        <div class="item o1">1</div>
+        <div class="item o-">2</div>
+        <div class="item o2">3</div>
+        <div class="item o-">4</div>
+    </div>
+    <!--order negativo puxa para frente dos outros, no exemplo acima o 
+        1 apenas passou o 3 mas nao os negativos-->
+
+    <h1>Column</h1>
+    <h2>Order = 0</h2>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>Order Diferentes</h2>
+    <div class="container direction">
+        <div class="item o4">1</div>
+        <div class="item o3">2</div>
+        <div class="item o2">3</div>
+        <div class="item o1">4</div>
+    </div>
+</body>
+</html>
